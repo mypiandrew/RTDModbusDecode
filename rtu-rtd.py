@@ -3,17 +3,13 @@
  ************************************************************************************************
  *
  * Sample Routine for decoding RTD modbus values
- * 
- * Compile with : 
- *                  gcc rtu-rtd.c -o rtu-rtd -lm
  *
  * Example use :
  *
- *                  pi@raspberrypi:~# ./rtu-rtd 8951
+ *                  pi@raspberrypi:~# ./rtu-rtd.py 8945
  *
- *                  RTD Temperature is :23.7899
- *
- *
+ *                  RTD Temperature is :
+ *                  23.6012135177
  * 
  * Equations from pages 2 & 4 here :
  * http://www.analog.com/media/en/technical-documentation/application-notes/AN709_0.pdf  
