@@ -34,16 +34,16 @@ int main(int argc, char **argv)
         }
 
         int modbusReading=atoi(argv[1]);
-        float rtuTempReading=0;
-        rtuTempReading=convertRtdReading(modbusReading);
+        float rtdTempReading=0;
+        rtdTempReading=decodeModbus(modbusReading);
         printf("\r\n");
-        printf("RTD Temperature is :%.4f", rtuTempReading);
+        printf("RTD Temperature is :%.4f", rtdTempReading);
         printf("\r\n");
-		exit(0);
+	exit(0);
 }
 
 
-float convertRtdReading(int modbusReading)
+float decodeModbus(int modbusReading)
 {
         const float RTD_A = 3.9083e-3;
         const float RTD_B = -5.775e-7;
